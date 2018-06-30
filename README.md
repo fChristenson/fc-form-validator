@@ -30,8 +30,8 @@ A library to validate a html form
 ```
 const validateForm = require('fc-form-validator');
 
-const (validators, formState) = {
-  username: username => {
+const validators = {
+  username: (username, formState) => {
     if (username === "") throw new Error("you must have a username");
 
     if (username && username.length < 3)
