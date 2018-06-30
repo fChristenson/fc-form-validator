@@ -1,10 +1,4 @@
-const ValidatedField = (valid, value, error) => {
-  return {
-    valid,
-    value,
-    error
-  };
-};
+const ValidatedField = require("./ValidatedField");
 
 const validateFormState = (formState, validators) => {
   const validatedState = Object.assign({}, formState);
