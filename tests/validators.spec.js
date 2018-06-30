@@ -32,7 +32,7 @@ describe("validators", () => {
     expect(expected).toEqual(actual);
   });
 
-  it("returns an false for a invalid field", () => {
+  it("returns false for a invalid field", () => {
     const type = "text";
     const name = "username";
     const value = "foo";
@@ -72,7 +72,7 @@ describe("validators", () => {
     expect(expected).toEqual(actual);
   });
 
-  it("returns a the first error for a invalid field", () => {
+  it("returns the first error for a invalid field", () => {
     const type = "text";
     const name = "username";
     const value = "foo";
@@ -95,7 +95,7 @@ describe("validators", () => {
     expect(expected).toEqual(actual);
   });
 
-  it("returns a the second error for a invalid field", () => {
+  it("returns the second error for a invalid field", () => {
     const type = "text";
     const name = "username";
     const value = "bar";
@@ -118,7 +118,7 @@ describe("validators", () => {
     expect(expected).toEqual(actual);
   });
 
-  it("returns multiple errors for a invalid fields", () => {
+  it("returns multiple errors for invalid fields", () => {
     const type = "text";
     const type2 = "password";
     const name = "username";
